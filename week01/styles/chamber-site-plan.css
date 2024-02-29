@@ -19,3 +19,25 @@ p {
     padding: 25px;
     color: #000;
 }
+
+nav {
+    background-color: #294166 ;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: #fff;
+}
+
+nav a:hover{
+    color: #fff;
+    background-color: #000;
+}
