@@ -16,6 +16,7 @@ header {
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #fff;
+	font-size: 40px;
 }
 
 header img {
@@ -30,9 +31,6 @@ main {
 	margin: 0 auto;
 }
 
-h1 {
-	font-size: 40px;
-}
 
 nav {
 	background-color: #000;
@@ -62,7 +60,7 @@ nav .active {
 	background-color: #502d19;
 }
 
-h2 {
+h1 {
 	color: #000;
 	border-bottom: 1px solid #8d8d8d;
 	padding: 10px;
