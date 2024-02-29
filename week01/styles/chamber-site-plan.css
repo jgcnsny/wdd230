@@ -1,0 +1,21 @@
+body {
+    font-family:"Poppins", sans-serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h2, h3 {
+    font-family: "Poppins", sans-serif;
+    color: #294166;
+}
+
+header {
+    padding: 20px;
+    background-color: #294166;
+    color: #fff;
+}
+
+p {
+    padding: 25px;
+    color: #000;
+}
