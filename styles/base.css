@@ -17,6 +17,7 @@ header {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	color: #fff;
 	font-size: 30px;
+	position: relative;
 }
 
 header img {
@@ -38,26 +39,50 @@ nav {
 	max-width: 100%;
 }
 
-nav ul {
-	list-style-type: none;
+#myButton::before {
+	content: "☰";
 }
 
-nav a {
-	display: block;
+#myButton{
+	font-size: 2rem;
+	background: none;
+	border: none;
 	color: #fff;
-	text-align: center;
-	padding: 1rem;
+	cursor: pointer;
+	width: 100%;
+	text-align: right;
+	padding: .2rem 2vw;
+}
+
+ul.menuLinks li a {
+	display: block;
+	padding: .7rem 2vw;
+	color: #fff;
 	text-decoration: none;
 }
 
-nav a:hover {
+ul.menuLinks a:hover {
 	color: #000;
 	background-color: #fff;
 }
 
-nav .active {
+li.active a {
 	color: #fff;
 	background-color: #502d19;
+}
+ul.menuLinks {
+	display: none;
+	list-style-type: none;
+
+}
+
+
+/* css for open class*/
+#myButton.open::before {
+	content: "x";
+}
+ul.menuLinks.open {
+	display: block;
 }
 
 h1 {
@@ -112,7 +137,7 @@ h1 {
 
 footer {
 	background-color: #294166;
-	margin-top: 125px;
+	margin-top: 135px;
 	padding: 20px;
 	color: #fff;
 	width: 100%;
@@ -124,4 +149,22 @@ footer p{
     color: #fff;
 	font-size: 15px;
 	margin: 1rem 2rem 1rem 1rem;
+}
+
+
+#darkBtn {
+	position: absolute;
+	top: 0;
+	right: 2vw;
+	width: 24px;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.dark {
+	background-color: #000;
+}
+
+.dark h1 {
+	color: #fff;
 }

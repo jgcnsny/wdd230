@@ -1,10 +1,24 @@
-@media (min-width: 640px) {
-	nav ul {
+@media only screen and (min-width: 38rem) {
+	/*nav ul {
 		display: flex;
 
 	}
 	nav ul li {
 		flex: 1 1 100%;
+	}*/
+
+	#myButton{
+		display: none;
+	}
+
+	ul.menuLinks, ul.menuLinks.open{
+		display: flex;
+		justify-content: center;
+	}
+
+	ul.menuLinks a:hover {
+		color: #000;
+		background-color: #fff;
 	}
 
 	.grid-container {

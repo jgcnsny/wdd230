@@ -9,21 +9,10 @@ let lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
 
-const hamButton = document.querySelector('#myButton');
-const navigation = document.querySelector('.menuLinks');
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
-});
-
-
-const darkButton = document.querySelector('#darkBtn');
-const body = document.querySelector("body");
-const main = document.querySelector("main");
-
-darkButton.addEventListener('click',()=>{
-	main.classList.toggle('dark');
-    body.classList.toggle('dark');
-
 });
