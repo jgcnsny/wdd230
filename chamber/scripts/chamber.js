@@ -9,8 +9,8 @@ let lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const hamButton = document.querySelector('#myButton');
+const navigation = document.querySelector('.menuLinks');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
