@@ -110,8 +110,9 @@ ul.menuLinks.open {
     color: #000;
     top:20%;
     font-size: 3em;
-    left: 20%;
+    left: 10%;
     margin:0;
+    text-align: center;
 }
 
 .hero .call-button {
