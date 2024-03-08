@@ -98,7 +98,7 @@ ul.menuLinks.open {
 
 .hero-image{
     position: relative;
-    height: 500px;
+    height: 700px;
     overflow: hidden;
     background: url(../images/hero.jpg) no-repeat center;
     background-size: cover;
@@ -184,24 +184,6 @@ h2 {
     max-width: 1000px; 
 }
 
-
-.spotlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.spotlight {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .spotlights {
-        grid-template-columns: 1fr;
-    }
-}
 
 footer {
 	background-color: #294166;
