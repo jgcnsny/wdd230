@@ -29,9 +29,8 @@ darkButton.addEventListener('click',()=>{
 });
 
 const visitsDisplay = document.querySelector(".visits");
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
 
-// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
 } else {
@@ -40,5 +39,5 @@ if (numVisits !== 0) {
 
 numVisits++;
 
-localStorage.setItem("numVisits-ls", numVisits);
+localStorage.setItem("numVisits", numVisits);
 
