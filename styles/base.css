@@ -185,7 +185,7 @@ footer p{
 
 .hero span {
 	position: absolute;
-	top: 10%;
+	top: 30%;
 	left: 0;
 	right: 0;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -193,7 +193,9 @@ footer p{
 	text-align: center;
 }
 
-iframe  {    width: 100%;}
+iframe {    
+	width: 100%;
+}
 
 .label {
 	font-family: "Poppins", sans-serif;
