@@ -27,6 +27,11 @@
 	.spotlight-grid-container {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
+	.image-grid img:hover {
+        transform: scale(1.1); /* Scale the image to 110% on hover */
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
     
 }
 

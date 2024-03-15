@@ -100,7 +100,7 @@ ul.menuLinks.open {
     position: relative;
     height: 700px;
     overflow: hidden;
-    background: url(../images/hero.jpg) no-repeat center;
+    background: url(../images/hero.webp) no-repeat center;
     background-size: cover;
 }
 
@@ -148,24 +148,24 @@ ul.menuLinks.open {
     max-width: 1000px; 
 }
 
-.card{
+.card, .sidebar-item{
 	background-color: #fff;
-	text-align: center;
+	text-align: left;
 	border-radius: 10px;
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	margin: 20px;
-	
 }
 
-.card h2 {
+.card h2, .sidebar-item h3{
 	background-color: #294166;
 	color: #fff;
 	border-bottom: 1px solid #8d8d8d;
 	padding: 10px;
+	text-align: center;
 }
-.card p {
+.card p , .sidebar-item p {
 	margin: 20px 0 20px 0; 
 }
 
@@ -198,4 +198,86 @@ footer p{
     color: #fff;
 	font-size: 15px;
 	margin: 1rem 2rem 1rem 1rem;
+}
+
+
+.footer-contact{
+    padding: 1rem;
+}
+
+.footer-address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-address p:nth-child(1){
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.layout-container {
+    display: grid;
+    grid-template-columns: minmax(250px, auto) 2fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar-content {
+    margin-bottom: 20px;
+	
+}
+
+.content {
+    padding: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-grid picture {
+    margin: 0;
+    text-align: center;
+}
+
+.image-grid img {
+    width: 100%; 
+    height: auto; 
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.image-grid h4 {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .layout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%; 
+        grid-column: auto; 
+    }
 }
