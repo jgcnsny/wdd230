@@ -244,7 +244,26 @@ footer p{
 
 .sidebar-content {
     margin-bottom: 20px;
-	
+	text-align: center;
+}
+
+.sidebar-content span {
+	font-size: 1.5rem;
+	font-weight: bolder;
+	border-bottom: 1px solid #8d8d8d;
+	padding: 10px;
+}
+
+.sidebar-item ul {
+	padding-left: 2rem;
+}
+
+.sidebar-item h4 {
+	padding-top: 0.5rem;
+}
+
+.sidebar-item li, p {
+	padding-top: 0.5rem;
 }
 
 .content {
@@ -269,6 +288,9 @@ footer p{
     border-radius: 5px;
 }
 
-.image-grid h4 {
+.image-grid p{
     margin-top: 10px;
+	font-size: 1rem;
+	font-weight: bolder;
+	text-align: center;
 }
