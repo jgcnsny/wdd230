@@ -32,6 +32,14 @@
         transform: scale(1.1); /* Scale the image to 110% on hover */
         transition: transform 0.3s ease; /* Add a smooth transition effect */
     }
+
+	.layout-container {
+		grid-template-columns: minmax(250px, auto) 3fr;
+	}
+
+	.sidebar {
+		width: 400px;
+	}
     
 }
 

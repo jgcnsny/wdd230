@@ -228,16 +228,18 @@ footer p{
 
 .layout-container {
     display: grid;
-    grid-template-columns: minmax(250px, auto) 2fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .sidebar {
-    width: 400px;
     background-color: #f0f0f0;
     padding: 20px;
+	margin-right: 20px;
+	width: 100%; 
+    grid-column: auto; 
 }
 
 .sidebar-content {
@@ -269,15 +271,4 @@ footer p{
 
 .image-grid h4 {
     margin-top: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .layout-container {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        width: 100%; 
-        grid-column: auto; 
-    }
 }
