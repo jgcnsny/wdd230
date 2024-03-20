@@ -1,0 +1,46 @@
+
+:root{
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+table {
+    margin: auto;
+    font-size: 1.5rem;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: #000;
+    font-size: .85rem;
+}
+
+th,
+td {
+    padding: .5rem 1.5rem;
+    text-align: center;
+}
+
+tr:first-child th {
+	background-color: #000;
+	color: #fff;
+}
+
+
+th {
+	background-color: gray;
+	font-size: larger;
+}
+
+thead th:first-child {
+    background-color: black;
+}
+
+tbody td, 
+tbody th {
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
