@@ -100,3 +100,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     border-left: solid 8px green;
 }
 
+.confirmation {
+    text-align: center;
+    padding: 40px;
+    margin-top: 150px;
+}
+
+
