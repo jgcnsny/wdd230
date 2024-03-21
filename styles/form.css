@@ -7,6 +7,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 :root {
     --primary-color: #294166; 
     --text-color: #000;
+    --border: 1px solid #999;
+
 }
 
 .form-container {
@@ -17,7 +19,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 .wf1 fieldset {
     margin: 2rem 0;
-    border: 1px solid #ddd;
+    border: var(--border);
     border-radius: 6px;
     padding: .5rem 2%;
 }
@@ -41,7 +43,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
  {
     background-color: #eee;
     display: block;
-    border: 1px solid #999;
+    border: var(--border);
     border-radius: 6px;
     padding: .75rem;
     color: #555;
@@ -49,15 +51,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     max-width: 400px;
     appearance: none;
 }
-
-input[type="email"]:valid {
-    background-color: #eee;
-    border: none;
-    outline: 1px solid red;
-    border-radius: 5px;
-    accent-color: gold;
-  }
-  
+ 
 
 #rating {
 	width: 200px;
@@ -67,6 +61,8 @@ input[type="email"]:valid {
 #rangevalue {
 	font-size: 2rem;
 	color: var(--primary-color);
+    padding: .75rem;
+    display: block;
 }
 
 #rangevalues {

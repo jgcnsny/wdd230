@@ -54,11 +54,10 @@
                 <div id="errorMessage"></div>
 
                 <label>Email* 
-                    <input type="email" name="email"  id="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain" required>
+                    <input type="email" name="email"  id="email" placeholder="someone@byui.edu" pattern="[\w.]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain" required>
                 </label>
-                <div id="errorMessage"></div>
-                <label for="r">Page Rating
-                    <div id="rangevalue">1</div>
+                <label>Page Rating
+                    <span id="rangevalue">1</span>
                     <input type="range" id="rating" name="rating" min="1" max="10" value="0" step="1" list="rangevalues">
                     <datalist id="rangevalues">
                         <option value="1">1</option>
