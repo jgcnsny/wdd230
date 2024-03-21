@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Philippine Chamber of Commerce Join Page</title>
+        <link rel="icon" href="favicon.ico">
+        <meta name="description" content=" WDD 230 - Web Frontend Development Jillian Cansanay Chamber of Commerce Site Join Page">
+        <meta name="author" content="Jillian Cansanay">
+        <meta property="og:title" content="Jillian Cansanay WDD 230 Course Join Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://github.com/jgcnsny/wdd230/blob/main/chamber/images/hero-meta.webp=true">
+        <meta property="og:url" content="https://jgcnsny.github.io/wdd230/chamber/">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Philippine Chamber of Commerce Logo">
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover Us</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="active"> <a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main class="form-container">
+        <h1>The Philippine Chamber of Commerce Join Form</h1>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+
+                <label>First Name* 
+                    <input type="text" name="fname" id="fname" required>
+                </label>
+
+                <label>Last Name* 
+                    <input type="text" name="lname" id="lname" required>
+                </label>
+
+                <label>Title or Position 
+                    <input type="text" name="position" id="position" pattern="^[a-zA-Z\s-]{7,}$">
+                </label>
+
+                <label>Email Address* 
+                    <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                </label>
+
+                <label>Mobile Phone Number* 
+                    <input type="tel" name="phone" id="phone" placeholder="1235551234" required>
+                </label>
+
+                <label>Business/Organization's Name*
+                    <input type="text" name="businessname" id="businessname" required>
+                </label>
+
+                <div>Membership Level</div>
+                <label><input type="radio" name="level" value="np">NP Membership is for non profit organizations and there is no fee</label>
+                <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="level" value="silver">Silver Membership</label>
+                <label><input type="radio" name="level" value="gold">Gold Membership</label>
+
+                <label>Business/Organization Description:
+                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                </label>
+
+                <label>Timestamp
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </label>
+
+            </fieldset>
+            
+            <input type="submit" value="Process my Application">
+
+        </form>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <div class="footer-address">
+                <img src="images/footer-logo.webp" alt="Philippine Chamber of Commerce Logo" width="100" height="100">
+                <div>
+                    <p>Philippine Chamber of Commerce</p>
+                    <p>127 Sebong St., Caratland, Ncity</p>
+                </div>
+            </div>
+            <div class="footer-contact-info">
+                <p>Email: email@pcc.com</p>
+                <p>Tel. No.: 123-4567</p> 
+            </div>
+        </div>
+        <p>&copy; <span id="currentYear"></span> | Jillian Cansanay | Philippine Chamber of Commerce - WDD 230 Project</p>
+        <p id="lastModified"></p>
+
+        <script src="scripts/chamber.js"></script>
+    </footer>
+</body>
+</html>
