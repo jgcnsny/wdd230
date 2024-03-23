@@ -42,9 +42,7 @@
 	}
 
 	.form-container {
-        max-width: 64rem;
-        margin:auto;
-    }
-    
+        grid-template-columns: 1fr 1fr;
+	}
 }
 

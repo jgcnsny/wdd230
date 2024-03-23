@@ -294,57 +294,65 @@ footer p{
 }
 
 
+
+
 /*----------- FORM STYLING --------------*/
 
-.wf1 fieldset {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: .5rem 2%;
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.form-content {
+    margin-bottom: 20px;
+	text-align: left;
 }
 
-.wf1 legend {
+.join-form fieldset {
+    margin: 2rem 0;
+    border: 1px solid gray;
+    border-radius: 6px;
+    
+}
+
+.join-form legend {
     color: #294166;
     padding: 0 .5rem;
+    font-weight: bolder;
 }
 
-.wf1 label {
+.join-form label {
     display: block;
     padding-top: 1rem;
     color: #000;
     font-size: .9rem;
 }
 
-.wf1 div {
-    padding-top: 1rem;
-    color:#294166;
-    font-size: .9rem;
-}
-
-.wf1 input[type="text"],
-.wf1 input[type="tel"],
-.wf1 input[type="email"],
-.wf1 input[type="date"],
-.wf1 textarea,
-.wf1 input[type="hidden"]
+.join-form input[type="text"],
+.join-form input[type="tel"],
+.join-form input[type="email"],
+.join-form textarea,
+.join-form input[type="hidden"]
  {
     background-color: #eee;
     display: block;
-    border: 1px solid #999;
+    border: 1px solid #000;
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: #000;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     appearance: none;
 }
 
-.wf1 input[type="radio"],
-.wf1 input[type="checkbox"] {
+.join-form input[type="radio"] {
     margin-right: 6px;
 }
 
-.wf1 input[type="submit"] {
+.join-form input[type="submit"] {
     border: none;
    background-color: #294166;
     color: white;
@@ -356,11 +364,44 @@ footer p{
     box-shadow: 1px 1px 4px #999;
 }
 
-.wf1 input:required {
-    border-left: solid 8px red;
+.join-form input:required:valid {
+    border: solid 2px green;
 }
 
-.wf1 input:required:valid {
-    border-left: solid 8px green;
+.join-form #position:invalid{
+
+    border-color: red;
+  
 }
 
+.membership-benefit {
+    padding: 20px;
+    padding: 1rem;
+    background-color: #eee;
+    text-align: left;
+    height: fit-content;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.membership-benefit ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding:  1rem;
+  }
+  
+  .membership-benefit li {
+    margin-bottom: 5px;
+    font-size: .9rem;
+  }
+
+
+.thank-you-message{
+    text-align: center;
+    padding: 40px;
+    margin-top: 150px;
+}
+
+h1 {
+    text-align: center;
+}
