@@ -33,7 +33,7 @@
     </nav>
     <main class="form-container">
         <h1>The Philippine Chamber of Commerce Join Form</h1>
-        <form method="get" action="thankyou.html" class="wf1">
+        <form method="get" action="thankyou.html" class="join-form">
             <fieldset>
                 <legend>Applicant Information</legend>
 
@@ -46,7 +46,7 @@
                 </label>
 
                 <label>Title or Position 
-                    <input type="text" name="position" id="position" pattern="^[a-zA-Z\s-]{7,}$">
+                    <input type="text" name="position" id="position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters of alphabets, hyphens, and spaces">
                 </label>
 
                 <label>Email Address* 
@@ -61,22 +61,88 @@
                     <input type="text" name="businessname" id="businessname" required>
                 </label>
 
-                <div>Membership Level</div>
-                <label><input type="radio" name="level" value="np">NP Membership is for non profit organizations and there is no fee</label>
-                <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
-                <label><input type="radio" name="level" value="silver">Silver Membership</label>
-                <label><input type="radio" name="level" value="gold">Gold Membership</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Information</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Membership Level</th>
+                            <th>Cost</th>
+                            <th>Benefits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label><input type="radio" name="membership_level" value="Non-Profit"> NP Membership</label></td>
+                            <td>$0</td>
+                            <td>
+                                <ul>
+                                    <li>-Access to newsletter</li>
+                                    <li>-Event invitations</li>
+                                    <li>-Discounts on workshops</li>
+                                    <li>-Recognition as Non-Profit Member</li>
+                                    <li>-Access to grants/funding</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="radio" name="membership_level" value="Bronze"> Bronze Membership</label></td>
+                            <td>$50</td>
+                            <td>
+                                <ul>
+                                    <li>-Exclusive newsletter</li>
+                                    <li>-Networking events</li>
+                                    <li>-Workshop discounts</li>
+                                    <li>-Website recognition</li>
+                                    <li>-Early conference registration</li>
+                                    <li>-Resource library access</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="radio" name="membership_level" value="Silver"> Silver Membership</label></td>
+                            <td>$100</td>
+                            <td>
+                                <ul>
+                                    <li>-All Bronze benefits</li>
+                                    <li>-Priority event registration</li>
+                                    <li>-Free workshop annually</li>
+                                    <li>-Guest article opportunities</li>
+                                    <li>-Recognition plaque</li>
+                                    <li>-Advertising discounts</li>
+                                    <li>-Exclusive webinars</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="radio" name="membership_level" value="Gold"> Gold membership</label></td>
+                            <td>$200</td>
+                            <td>
+                                <ul>
+                                    <li>-All Silver benefits</li>
+                                    <li>-VIP event access</li>
+                                    <li>-Free workshops</li>
+                                    <li>-Featured in newsletter/social media</li>
+                                    <li>-Personalized consultations</li>
+                                    <li>-Exclusive event invitations</li>
+                                    <li>-Priority speaking opportunities</li>
+                                    <li>-Dedicated account manager</li>
+                                  </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <label>Business/Organization Description:
                 <textarea id="description" name="description" rows="4" cols="50"></textarea>
                 </label>
 
-                <label>Timestamp
-                    <input type="hidden" name="timestamp" id="timestamp">
-                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
 
-            </fieldset>
-            
+            </fieldset>    
+
             <input type="submit" value="Process my Application">
 
         </form>
