@@ -371,8 +371,9 @@ footer p{
 .join-form #position:invalid{
 
     border-color: red;
-  
 }
+
+
 
 .membership-benefit {
     padding: 20px;

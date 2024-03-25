@@ -22,4 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     sidebarContent.textContent = message;
 
     localStorage.setItem("lastVisitDate", currentDate.toString());
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> bc63eccd8e8336922fac7703935e07d9acebb230
