@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Use the Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Use auto-fit for responsiveness */
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+}
+
+section h2 {
+    padding: 20px;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #3300fe;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}

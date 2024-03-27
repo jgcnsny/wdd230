@@ -1,0 +1,28 @@
+{
+    "familyName" : "Choi Family",
+    "moveInDate" : "May 26, 2015",
+    "numberOfRecords" : 5,
+    "visited" : true,
+    "familyMembers" : [
+      {
+        "name" : "Choi Seungcheol",
+        "gender" : "Male",
+        "birthdate" : "August 8, 1995"
+      },
+      {
+        "name" : "Jung Hana",
+        "gender" : "Female",
+        "birthdate" : "April 01, 1994"
+      },
+      {
+        "name" : "Choi Sarang",
+        "gender" : "Female",
+        "birthdate" : "February 14, 2020"
+      },
+      {
+        "name" : "Choi Nari",
+        "gender" : "Female",
+        "birthdate" : "May 26, 2023"
+      }
+    ]
+  }
