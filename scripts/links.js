@@ -18,7 +18,7 @@ const displayLinks = (weeks) => {
 
         week.links.forEach((link) => {
     
-            weekLinksHTML += `<a href="${link.url}">${link.title}</a>| `;
+            weekLinksHTML += `<a href="${link.url}" target="_blank">${link.title}</a>| `;
         });
 
         listElement.innerHTML = weekName + weekLinksHTML;
