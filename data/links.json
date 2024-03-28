@@ -35,23 +35,6 @@
         ]
       },
       {
-        "week": "Week 2",
-        "links": [
-          {
-            "url":"week02/design.html",
-            "title":"Web Design Principles"
-          },
-          {
-            "url":"https://codepen.io/Jillian-Cansanay/pen/VwNLdYo",
-            "title":"Responsive Navigation"
-          },
-          {
-            "url":"week02/bom.html",
-            "title":"BOM"
-          }
-        ]
-      },
-      {
         "week": "Week 3",
         "links": [
           {
