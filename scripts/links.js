@@ -9,17 +9,21 @@ displayLinks(data.weeks);
 }
 
 const displayLinks = (weeks) => {
+    const linksContainer = document.getElementById('links-container');
+  
     weeks.forEach((week) => {
-        const li = document.createElement('li');
-        let content = `${weeks.week}: `;
+        const listElement = document.createElement('li');
+        let weekName = `${week.week}: `;
+        let weekLinksHTML = '';
 
         week.links.forEach((link) => {
-            content += `<a href="${link.url}">${link.title}</a>| `;
+    
+            weekLinksHTML += `<a href="${link.url}">${link.title}</a>| `;
         });
 
-        li.innerHTML = content;
-        document.querySelector('ul').appendChild(li);
+        listElement.innerHTML = weekName + weekLinksHTML;
+        linksContainer.appendChild(listElement);
     });
 };
-
+ 
 getLinks(linksURL);
