@@ -208,5 +208,12 @@ iframe {
 	font-size: larger;
 }
 
+.weather-container {
+    display: flex; 
+    align-items: center; 
+	justify-content: center;
+}
+  
+
 
 
