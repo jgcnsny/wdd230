@@ -19,13 +19,18 @@ async function apiFetch(url) {
     }
 }
 
-
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F - ${data.weather[0].main}`;
+    const currentTemp = document.createElement('span');
+    currentTemp.textContent = `${data.main.temp}°F - ${data.weather[0].description}`;
+
+    const weatherIcon = document.createElement('img')
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', 'cloud icon');
+    weatherIcon.setAttribute('alt', 'Weather icon');
+
+    weatherContainer.appendChild(weatherIcon)
+    weatherContainer.appendChild(currentTemp)
 }
 
 apiFetch(url);
