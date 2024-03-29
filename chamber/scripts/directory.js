@@ -8,10 +8,13 @@ const  displayMembers = async (member) => {
         const articleElement = document.createElement('article');
         const h3Element = document.createElement('h3');
         const imgElement = document.createElement('img');
+        const spanElement = document.createElement('span');
 
         h3Element.textContent = member.name;
         imgElement.setAttribute('src', member.imageUrl);
         imgElement.setAttribute('alt', member.name);
+        spanElement.textContent = `Address: ${member.address}`
+
 
         articleElement.appendChild(h3Element);
         articleElement.appendChild(imgElement);
