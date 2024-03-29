@@ -8,18 +8,17 @@
       "membershipLevel": "Silver",
       "membershipDate": "June 20, 2019"
     },
+    {
+        "name": "SVT Corporation",
+        "address": "17 St. Caratland, Horanghae City",
+        "phoneNumber": "(017) 526-2015",
+        "WebsiteURL": "https://pledis.co.kr/ko/artist/detail/seventeen/",
+        "imageUrl": "images/svt.webp",
+        "membershipLevel": "Gold",
+        "membershipDate": "May 26, 2015"
+    },
 
     {
-        "name": "SM Entertainment",
-        "address": "83-21, Wangsimni-ro, Seongsu-dong, Seongdong-gu, Seoul, South Korea",
-        "phoneNumber": "(123) 456-7890",
-        "WebsiteURL": "https://www.smentertainment.com/",
-        "imageUrl": "images/sm.png",
-        "membershipLevel": "Gold",
-        "membershipDate": "February 14, 2018"
-      },
-
-      {
         "name": "JYP Entertainment",
         "address": "Gangdong, Seoul, South Korea",
         "phoneNumber": "(555) 123-4567.",
@@ -29,7 +28,17 @@
         "membershipDate": "April 25, 2021"
       },
 
-      {
+    {
+        "name": "Neo Culture Technology",
+        "address": "127St. Dream Boulevard, WayV Town, Neo City",
+        "phoneNumber": "(127) 707-2016",
+        "WebsiteURL": "https://global.shop.smtown.com/collections/nct",
+        "imageUrl": "images/nct.webp",
+        "membershipLevel": "Gold",
+        "membershipDate": "July 07, 2016"
+      },
+
+    {
         "name": "HYBE Corporation",
         "address": "Yongsan Trade Center, Yongsan,[1] Seoul, South Korea",
         "phoneNumber": "(555) 987-6543",
@@ -37,32 +46,25 @@
         "imageUrl": "images/hybe.webp",
         "membershipLevel": "Non-Profit",
         "membershipDate": "March 1, 2024"
-      },
-      {
-        "name": "SVT Corporation",
-        "address": "17 St. Caratland, Horanghae City",
-        "phoneNumber": "(017) 526-2015",
-        "WebsiteURL": "https://pledis.co.kr/ko/artist/detail/seventeen/",
-        "imageUrl": "image/svt.webp",
+    },
+
+    {
+        "name": "SM Entertainment",
+        "address": "83-21, Wangsimni-ro, Seongsu-dong, Seongdong-gu, Seoul, South Korea",
+        "phoneNumber": "(123) 456-7890",
+        "WebsiteURL": "https://www.smentertainment.com/",
+        "imageUrl": "images/sm.webp",
         "membershipLevel": "Gold",
-        "membershipDate": "May 26, 2015"
-      },
-      {
-        "name": "Neo Culture Technology",
-        "address": "127St. Dream Boulevard, WayV Town, Neo City",
-        "phoneNumber": "(127) 707-2016",
-        "WebsiteURL": "https://global.shop.smtown.com/collections/nct",
-        "imageUrl": "image/nct.webp",
-        "membershipLevel": "Gold",
-        "membershipDate": "July 07, 2016"
-      },
-      {
-        "name": "XG Innovations",
-        "address": "456 Future Avenue, Suite 201, Innovation City, Xylon",
-        "phoneNumber": "(555) 555-1234",
-        "WebsiteURL": "https://xgalx.com/en/xg/",
-        "imageUrl": "image/nct.webp",
-        "membershipLevel": "Bronze",
-        "membershipDate": "March 18, 2022"
-      }
+        "membershipDate": "February 14, 2018"
+    },
+    
+    {
+    "name": "XG Innovations",
+    "address": "456 Future Avenue, Suite 201, Innovation City, Xylon",
+    "phoneNumber": "(555) 555-1234",
+    "WebsiteURL": "https://xgalx.com/en/xg/",
+    "imageUrl": "images/xg.webp",
+    "membershipLevel": "Bronze",
+    "membershipDate": "March 18, 2022"
+    }
   ]
