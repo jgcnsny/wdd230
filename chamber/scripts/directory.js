@@ -33,3 +33,5 @@ const  displayMembers = async (member) => {
       }
  }
 
+
+ getMembers();
