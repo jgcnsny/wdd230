@@ -18,6 +18,7 @@ const  displayMembers = async (member) => {
 
         articleElement.appendChild(h3Element);
         articleElement.appendChild(imgElement);
+        articleElement.appendChild(spanElement);
 
         membersElement.appendChild(articleElement);
 
