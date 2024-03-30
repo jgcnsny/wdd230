@@ -44,4 +44,9 @@
 	.form-container {
         grid-template-columns: 1fr 1fr;
 	}
+
+	.list article {
+		grid-template-columns: repeat(6, 1fr);
+		gap: 10px;
+	}
 }
