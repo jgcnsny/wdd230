@@ -21,7 +21,7 @@
     {
         "name": "JYP Entertainment",
         "address": "Gangdong, Seoul, South Korea",
-        "phoneNumber": "(555) 123-4567.",
+        "phoneNumber": "(555) 123-4567",
         "websiteURL": "https://www.jype.com/",
         "imageUrl": "images/jyp.webp",
         "membershipLevel": "Bronze",
@@ -40,7 +40,7 @@
 
     {
         "name": "HYBE Corporation",
-        "address": "Yongsan Trade Center, Yongsan,[1] Seoul, South Korea",
+        "address": "Yongsan Trade Center, Yongsan,Seoul, South Korea",
         "phoneNumber": "(555) 987-6543",
         "websiteURL": "https://hybecorp.com/",
         "imageUrl": "images/hybe.webp",

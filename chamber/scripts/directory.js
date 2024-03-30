@@ -10,7 +10,7 @@ const  displayMembers = async (member) => {
         const imgElement = document.createElement('img');
         const spanAddress = document.createElement('span');
         const spanPhone = document.createElement('span')
-        const spanUrl = document.createElement('span')
+        const anchorUrl = document.createElement('a');
         const spanLevel= document.createElement('span')
         const spanDate = document.createElement('span')
 
@@ -19,7 +19,9 @@ const  displayMembers = async (member) => {
         imgElement.setAttribute('alt', member.name);
         spanAddress.textContent = `${member.address}`;
         spanPhone.textContent = `${member.phoneNumber}`;
-        spanUrl.textContent = `${member.websiteUrl}`;
+        anchorUrl.setAttribute('href', member.websiteURL);
+        anchorUrl.setAttribute('target', '_blank');
+        anchorUrl.textContent = `${member.websiteURL}`;
         spanLevel.textContent = `${member.membershipLevel} Membership`;
         spanDate.textContent = `Member since ${member.membershipDate}`;
 
@@ -28,7 +30,7 @@ const  displayMembers = async (member) => {
         articleElement.appendChild(imgElement);
         articleElement.appendChild(spanAddress);
         articleElement.appendChild(spanPhone);
-        articleElement.appendChild(spanUrl);
+        articleElement.appendChild(anchorUrl);
         articleElement.appendChild(spanLevel);
         articleElement.appendChild(spanDate);
 
@@ -51,3 +53,18 @@ const  displayMembers = async (member) => {
 
 
  getMembers();
+
+ const gridbutton = document.querySelector("#grid");
+ const listbutton = document.querySelector("#list");
+ 
+ gridbutton.addEventListener("click", () => {
+    membersElement.classList.add("grid");
+    membersElement.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+    membersElement.classList.add("list");
+    membersElement.classList.remove("grid");
+}
