@@ -413,10 +413,13 @@ h1 {
 }
 
 .menu button {
-    padding: 1rem;
-    font-weight: 700;
+    padding: .5rem;
 }
 
+.menu img {
+    padding: .5rem;
+    width: 50px;
+}
 #members article {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
@@ -427,14 +430,14 @@ h1 {
 }
 
 #members article span {
-    font-size: .9rem;
+    font-size: 0.8rem;
     margin-top: .5rem;
 }
 
 #members article a {
     font-family: "Poppins", sans-serif;
     font-size: 0.8rem;
-    color: navy;
+    color: #294166;
     margin-top: .5rem;
 }
 
