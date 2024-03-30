@@ -8,17 +8,29 @@ const  displayMembers = async (member) => {
         const articleElement = document.createElement('article');
         const h3Element = document.createElement('h3');
         const imgElement = document.createElement('img');
-        const spanElement = document.createElement('span');
+        const spanAddress = document.createElement('span');
+        const spanPhone = document.createElement('span')
+        const spanUrl = document.createElement('span')
+        const spanLevel= document.createElement('span')
+        const spanDate = document.createElement('span')
 
         h3Element.textContent = member.name;
         imgElement.setAttribute('src', member.imageUrl);
         imgElement.setAttribute('alt', member.name);
-        spanElement.textContent = `Address: ${member.address}`
+        spanAddress.textContent = `${member.address}`;
+        spanPhone.textContent = `${member.phoneNumber}`;
+        spanUrl.textContent = `${member.websiteUrl}`;
+        spanLevel.textContent = `${member.membershipLevel} Membership`;
+        spanDate.textContent = `Member since ${member.membershipDate}`;
 
 
         articleElement.appendChild(h3Element);
         articleElement.appendChild(imgElement);
-        articleElement.appendChild(spanElement);
+        articleElement.appendChild(spanAddress);
+        articleElement.appendChild(spanPhone);
+        articleElement.appendChild(spanUrl);
+        articleElement.appendChild(spanLevel);
+        articleElement.appendChild(spanDate);
 
         membersElement.appendChild(articleElement);
 
