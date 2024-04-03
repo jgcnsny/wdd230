@@ -42,14 +42,14 @@ const  displayMembers = async (member) => {
 
 
 
- const getMembers = async () => {
+const getMembers = async () => {
     const response = await fetch ('https://jgcnsny.github.io/wdd230/chamber/data/members.json');
     if (response.ok) {
         const data = await response.json();
         memberList = data;
         displayMembers(data);
       }
- }
+}
 
 
  getMembers();
