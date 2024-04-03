@@ -1,4 +1,4 @@
-const weatherContainer = document.querySelector('#weather-container')
+
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=14.19&lon=121.12&units=metric&appid=2da8a4cd6d9da23afaa72a1b524b2798';
 
 async function apiFetch(url) {
