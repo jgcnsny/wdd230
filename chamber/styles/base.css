@@ -96,7 +96,7 @@ ul.menuLinks.open {
 	display: block;
 }
 
-.hero-image{
+/*.hero-image{
     position: relative;
     height: 700px;
     overflow: hidden;
@@ -122,17 +122,45 @@ ul.menuLinks.open {
     display: block;
     font-size: 26px;
     font-weight: 700;
+}*/
+
+.hero{
+	position: relative;
 }
 
-.call-button{
-    color: #fff;
-    padding: 10px 24px;
-    font: 20px;
-    text-decoration: none;
-    background-color: #294166;
-    border-radius: 8px;
-    transition:  0.3s all;
+.hero picture {
+	width: 100%;
+}
 
+.hero img {
+	width:100%;
+	height: auto;
+	display: block;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	text-align: center;
+    font-size: .8rem;
+}
+
+
+.call-button {
+    background-color: #294166;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
 }
 
 .call-button:hover{
