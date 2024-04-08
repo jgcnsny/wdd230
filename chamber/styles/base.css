@@ -110,15 +110,27 @@ ul.menuLinks.open {
 	display: block;
 }
 
-.hero h1 {
+.hero h1{
 	position: absolute;
 	top: 30%;
 	left: 0;
 	right: 0;
 	padding: 1rem;
 	text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
 }
+
+.hero span {
+    position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+    margin-top: 10px;
+	text-align: center;
+    font-size: 1rem;
+}
+
 
 
 .call-button {
@@ -140,13 +152,12 @@ ul.menuLinks.open {
 }
 
 
-.grid-container, .spotlight-grid-container  {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;
 	margin: 0 auto; 
     max-width: 1000px; 
-    padding: 0 20px;
 }
 
 .card, .sidebar-item{
@@ -176,14 +187,27 @@ h2 {
     text-align: center;
 }
 
+.spotlight-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin: 0 auto; 
+}
 .spotlight-grid-container section{
-    text-align: center;
-    font-size: .9rem;
+    height: 350px;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
     background-color: #fff;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-	margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
 }
 
 .spotlight-grid-container h2{
