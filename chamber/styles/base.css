@@ -140,7 +140,7 @@ ul.menuLinks.open {
 }
 
 
-.grid-container {
+.grid-container, .spotlight-grid-container  {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;
@@ -176,20 +176,13 @@ h2 {
     text-align: center;
 }
 
-.spotlight-grid-container {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px;
-	margin: 0 auto; 
-    max-width: 900px; 
-}
-
 .spotlight-grid-container section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: .9rem;
 }
 
 .spotlight-grid-container h2{
@@ -201,6 +194,7 @@ h2 {
     font-size: 1rem;
     color: #294166;
     margin-top: .5rem;
+    font-size: .9rem;
 }
 
 
@@ -536,4 +530,31 @@ h1 {
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px;
     padding: 5px;
+}
+.banner {
+    display: none;
+    background-color: #294166;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.closeButton {
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px; 
+    right: 5px;
+    padding: 5px 10px;
+    
+}
+
+.closeButton:hover {
+    background-color: #555;
 }
