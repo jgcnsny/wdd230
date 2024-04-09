@@ -193,7 +193,7 @@ h2 {
     grid-gap: 20px;
     align-items: center;
     margin-bottom: 3rem;
-    margin: 0 auto; 
+    margin: 10px auto; 
 }
 .spotlight-grid-container section{
     height: 350px;
@@ -207,7 +207,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center
+    text-align: center;
+    font-size: .8rem;
 }
 
 .spotlight-grid-container h2{
@@ -219,7 +220,7 @@ h2 {
     font-size: 1rem;
     color: #294166;
     margin-top: .5rem;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 
@@ -459,7 +460,7 @@ h1 {
     padding: .5rem;
     width: 50px;
 }
-#members article {
+#members article  {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
 }
