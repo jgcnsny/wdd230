@@ -38,4 +38,3 @@ function displaySpotlightMember(members) {
 });
 }
 getSpolightMembers(url);
-
